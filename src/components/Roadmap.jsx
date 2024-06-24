@@ -7,7 +7,7 @@ import Tradingimg from '../assets/images/webp/trading-chart.webp'
 import { Ellipse2232, Ellipse2233, Ellipse2234 } from '../common/icon'
 const Roadmap = () => {
     return (
-        <section className='bg-black roadmap-bg position-relative' id='roadmap'>
+        <section className='bg-black roadmap-bg position-relative overflow-hidden' id='roadmap'>
             <div className=" position-absolute ellipse2233">
                 <Ellipse2233/>
             </div>
@@ -17,7 +17,7 @@ const Roadmap = () => {
             <div className=" position-absolute ellipse2232">
                 <Ellipse2232 />
             </div>
-            <Container>
+            <Container className=' position-relative'>
                 <h2 className=' font-manrope fw-bold fs-48 lh-57 white-light mb-0 text-center pt-64 pb-100 '>Roadmap</h2>
                 <Row className='pb-lg-366 pb-sm-80 pb-60' data-aos="fade-up">
                     <Col lg={4} sm={6} className='d-flex justify-content-center pt-lg-184'>
@@ -122,12 +122,12 @@ const Roadmap = () => {
                             </div>
                         </div>
                     </Col>
-                </Row>             
-            </Container>
-            <div className="trading-img position-absolute d-lg-block d-none">
+                </Row>          
+                <div className="trading-img position-absolute d-lg-block d-none">
                     <img src={Tradingimg} alt="trading" className='w-100' />
-
-                </div>
+            </div>   
+            </Container>
+          
         </section>
     )
 }

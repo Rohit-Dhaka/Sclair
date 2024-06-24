@@ -379,7 +379,7 @@
 
 
 .accordion-button::after {
-  background-image: url("./assets/images/svg/bottom-icon.svg") !important;  
+  background-image: url("./assets/images/svg/bottom-icon.svg") !important;
 }
 
 /* -----------------------------------------------------------accordion */
@@ -461,6 +461,10 @@
   border-radius: 50%;
   border: 0.5px solid #F1F1F1 !important;
   padding: 5px;
+  transition: all 300ms linear;
+}
+.media-icon svg path{
+  transition: all 300ms linear;
 }
 
 .media-icon:hover {
@@ -541,6 +545,13 @@
 
 .outline-none {
   outline: none;
+}
+.bg-layer{
+  max-width: 530px ;
+  height: 460px;
+  top: -39%;
+  left: 7%;
+  
 }
 
 .timing-box {
@@ -682,13 +693,19 @@
 }
 
 .trading-img {
-  bottom: 0;    
+  bottom: 0;
+  left: -4%;
+  right: -4%;
 }
 
 .hero-img {
   max-width: 810px;
-  /* max-height: 442px; */
+  min-height: 442px;
 }
+
+
+
+
 
 .navbar-toggler {
   background-color: yellow !important;
@@ -859,6 +876,11 @@
     gap: 28px !important;
   }
 }
-@media (min-width:1400px) {
-  
+
+@media (min-width:1200px) {
+  .trading-img {
+    bottom: -6%;
+    left: -9%;
+    right: -9%;
+  }
 }

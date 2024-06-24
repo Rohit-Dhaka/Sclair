@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import Frame from '../assets/images/webp/Glyph.webp'
 import Topunion from '../assets/images/webp/Union-top.webp'
 import Bottomunion from '../assets/images/webp/Union-bottom.webp'
+import Backgroundlayer from '../assets/images/webp/bg-layer.webp'
 const Fully = () => {
     var settings = {
         dots: true,
@@ -20,8 +21,8 @@ const Fully = () => {
         variableWidth: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,       
-       arrows: false
+        slidesToScroll: 1,
+        arrows: false
     };
     return (
         <section className='bg-black  overflow-hidden  position-relative' id='audit' >
@@ -29,11 +30,13 @@ const Fully = () => {
             <img src={Bottomunion} alt="Bottomunion" className='w-100 z-1 position-relative' />
             <Container>
                 <Row className='pt-sm-77 pt-60 pb-sm-83 pb-60'>
-                    <Col lg={6} className='d-flex justify-content-center z-1' data-aos="fade-up">
-                   
-                        <img src={Frame} alt="frame" />
+                    <Col lg={6} className='d-flex justify-content-center z-1 position-relative' data-aos="fade-up">                        
+                            <img src={Frame} alt="frame" />
+                            <div className=" position-absolute bg-layer">
+                                <img src={Backgroundlayer} alt="" className='w-100' />
+                            </div>                        
                     </Col>
-                    <Col lg={6} className='z-1' data-aos="fade-up">
+                    <Col lg={6} className='z-1 pt-lg-0 pt-4' data-aos="fade-up">
                         <div className="d-flex flex-column align-items-start">
                             <h6 className=' font-manrope fw-normal fs-20 lh-48 mb-0 white-light'>Rest easy knowing that $CLAIR is </h6>
                             <h5 className='font-manrope fw-bold fs-32 lh-48 color-yellow mb-0 py-10'>Fully Audited and 100% Secure.</h5>

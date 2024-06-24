@@ -57,7 +57,7 @@ const Tokenomics = () => {
                         </div>
 
                     </Col>
-                    <Col lg={6} className=' d-flex justify-content-end ' data-aos="fade-up">
+                    <Col lg={6} className=' d-flex justify-content-lg-end   justify-content-center' data-aos="fade-up">
                     <div className="tokenomics-img ">
 
                         <img src={Pre} alt="pre" className='w-100' />
