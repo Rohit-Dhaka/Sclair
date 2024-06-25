@@ -32,10 +32,8 @@ const Hero = () => {
 
               <Dropdown className='pt-lg-0 pt-4'>
                 <Dropdown.Toggle variant="success" id="dropdown-basic" className=''>
-
                   <img src={Languageicon} alt="Languageicon" />
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">English</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">Hindi</Dropdown.Item>
@@ -55,7 +53,7 @@ const Hero = () => {
         <div className="d-flex flex-column align-items-center  ">
           <h1 className=' font-manrope fw-bold fs-60 lh-72 white-light mb-0 text-center'>Presale is <span className="color-yellow">Live</span></h1>
           <h6 className='font-manrope  fw-normal fs-16 lh-24 white-light pt-3 mb-0 max-w-720 text-center pb-32'>Led by the most advanced AI technology, with a unique burn system to potentially increase its value significantly. Secure your chance to become the next millionaire!</h6>
-          <button className='buy-btn font-manrope fw-bold fs-16 lh-24 d-flex align-items-center gap-10'>Buy $Clair
+          <button className='buy-btn font-manrope fw-bold fs-16 lh-24 d-flex align-items-center gap-10 hero-btn'>Buy $Clair
             <img src={Buyicon} alt="buyicon" />
           </button>
           <div className="hero-img"><img src={Heroimg} alt="heroimg" className='w-100  ' /></div>
