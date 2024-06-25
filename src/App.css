@@ -101,6 +101,10 @@
   padding-bottom: 24px;
 }
 
+.pb-25 {
+  padding-bottom: 25px;
+}
+
 .pb-26 {
   padding-bottom: 26px;
 }
@@ -165,6 +169,18 @@
 
 .max-w-856 {
   max-width: 856px;
+}
+
+.max-w-186 {
+  max-width: 186px;
+}
+
+.max-w-57 {
+  max-width: 57px;
+}
+
+.max-w-160 {
+  max-width: 160px;
 }
 
 /* ------------------------------------------------width */
@@ -463,13 +479,20 @@
   padding: 5px;
   transition: all 300ms linear;
 }
-.media-icon svg path{
+
+.media-icon svg path {
   transition: all 300ms linear;
 }
 
 .media-icon:hover {
   background-color: yellow !important;
   border: 0.5px solid yellow !important;
+  /* color: red; */
+}
+.media-icon:hover svg{
+
+  transform: rotateY(360deg);
+  transition: 0.9s;
 }
 
 .media-icon:hover svg path {
@@ -546,12 +569,13 @@
 .outline-none {
   outline: none;
 }
-.bg-layer{
-  max-width: 530px ;
+
+.bg-layer {
+  max-width: 530px;
   height: 460px;
   top: -39%;
   left: 7%;
-  
+
 }
 
 .timing-box {
@@ -574,26 +598,17 @@
 .major-box {
   border-radius: 16px;
   background-color: #FFFFFF14;
-  padding: 40px 15px 40px;
-}
-
-.major-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  padding: 1px;
-  background: linear-gradient(145deg, #FFF62466, var(--darkSlate-Gray));
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  padding: 40px 15px 15px;
+  max-width: 465px;
 }
 
 .slider-box {
   padding: 23px 36px;
   border-radius: 7px;
+}
+
+.slick-track {
+  height: 99px;
 }
 
 .underline::after {
@@ -609,6 +624,11 @@
   transition: transform 0.25s ease-out;
 }
 
+.slider-line {
+  height: 1px;
+  background-color: #525019;
+}
+
 .underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -617,28 +637,6 @@
 .slick-slide {
   margin-right: 16px;
   margin-left: 16px;
-}
-
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px !important;
-  height: 1px !important;
-  content: '' !important;
-  text-align: center;
-  background-color: #54521B;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-dots li.slick-active button:before {
-  opacity: 0.7;
-  width: 20px !important;
-  background-color: #54521B;
 }
 
 .dropdown-toggle::after {
@@ -668,7 +666,9 @@
   background-color: #FFFFFF14;
   padding: 24px 50px 24px 24px;
   border-radius: 16px;
+  transition: all 300ms linear;
 }
+
 
 .roadmap-card::before {
   content: "";

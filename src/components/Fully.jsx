@@ -15,14 +15,16 @@ import Topunion from '../assets/images/webp/Union-top.webp'
 import Bottomunion from '../assets/images/webp/Union-bottom.webp'
 import Backgroundlayer from '../assets/images/webp/bg-layer.webp'
 const Fully = () => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        variableWidth: true,
-        speed: 500,
+    var settings = {            
+        variableWidth: true,                
+        arrows: false,        
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        pauseOnHover: false,
+        cssEase: 'linear'            
     };
     return (
         <section className='bg-black  overflow-hidden  position-relative' id='audit' >
@@ -30,11 +32,11 @@ const Fully = () => {
             <img src={Bottomunion} alt="Bottomunion" className='w-100 z-1 position-relative' />
             <Container>
                 <Row className='pt-sm-77 pt-60 pb-sm-83 pb-60'>
-                    <Col lg={6} className='d-flex justify-content-center z-1 position-relative' data-aos="fade-up">                        
-                            <img src={Frame} alt="frame" />
-                            <div className=" position-absolute bg-layer">
-                                <img src={Backgroundlayer} alt="" className='w-100' />
-                            </div>                        
+                    <Col lg={6} className='d-flex justify-content-center z-1 position-relative' data-aos="fade-up">
+                        <img src={Frame} alt="frame" />
+                        <div className=" position-absolute bg-layer">
+                            <img src={Backgroundlayer} alt="" className='w-100' />
+                        </div>
                     </Col>
                     <Col lg={6} className='z-1 pt-lg-0 pt-4' data-aos="fade-up">
                         <div className="d-flex flex-column align-items-start">
@@ -53,8 +55,8 @@ const Fully = () => {
                         </div>
                     </Col>
                     <Col lg={5} className='z-1' data-aos="fade-up">
-                        <div className="major-box position-relative ">
-                            <Slider {...settings}>
+                        <div className="major-box position-relative w-100">
+                            <Slider {...settings} className='pb-25'>
                                 <div>
                                     <div className="slider-box bg-white"><img src={Slider1} alt="slider" /></div>
                                 </div>
@@ -74,6 +76,11 @@ const Fully = () => {
                                     <div className="slider-box bg-white"><img src={Slider6} alt="slider" /></div>
                                 </div>
                             </Slider>
+                            <div className="d-flex  gap-3">
+                                <div className="slider-line w-100 max-w-186"></div>
+                                <div className="slider-line w-100 max-w-57"></div>
+                                <div className="slider-line w-100 max-w-160"></div>
+                            </div>
 
                         </div>
                     </Col>
