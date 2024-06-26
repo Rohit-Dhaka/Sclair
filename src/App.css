@@ -350,7 +350,7 @@
 
 .ellipse2230 {
   right: 0;
-  bottom: -10%;
+  bottom: -10%;  
 }
 
 .ellipse2231 {
@@ -603,6 +603,7 @@
 .slider-box {
   padding: 23px 36px;
   border-radius: 7px;
+  max-width: 267px;
 }
 
 .slick-track {

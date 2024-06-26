@@ -8,7 +8,6 @@ import Languageicon from '../assets/images/svg/Language.svg'
 import Buyicon from '../assets/images/svg/buy.svg'
 import Dropdown from 'react-bootstrap/Dropdown';
 import Nextsection from '../assets/images/svg/nextsection.svg'
-import Commonbtn from './Commonbtn';
 import Heroimg from '../assets/images/webp/Hero.png'
 const Hero = () => {
   return (

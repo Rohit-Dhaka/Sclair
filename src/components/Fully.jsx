@@ -18,8 +18,7 @@ const Fully = () => {
     var settings = {            
         variableWidth: true,                
         arrows: false,        
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 1,        
         autoplay: true,
         autoplaySpeed: 0,
         speed: 8000,
