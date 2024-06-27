@@ -416,7 +416,7 @@
 }
 
 .cursor-pointer {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .timeing-box {

@@ -14,7 +14,7 @@ const Hero = () => {
     <section className=' min-vh-100 hero-background position-relative  d-flex  flex-column '>
       <Navbar expand="lg" className=" py-26 Navbar  position-absolute w-100 z-1" data-aos="fade-down">
         <Container>
-          <div className="d-flex gap-12">
+          <div className="d-flex gap-12 cursor-pointer">
             <img src={Logo} alt="logo" />
             <h3 className='color-yellow font-manrope fs-32 lh-48 mb-0 fw-semibold '>$CLAIR</h3>
           </div>
