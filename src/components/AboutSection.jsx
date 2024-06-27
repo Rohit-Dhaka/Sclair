@@ -14,7 +14,7 @@ import Yellowline from '../assets/images/webp/yellow-line.webp'
 import Whiteline from '../assets/images/webp/white-line.webp'
 import { Ellipse2236 } from '../common/icon'
 const { useState, useEffect } = React;
-const About = () => {
+const AboutSection = () => {
   const [countdownDate, setCountdownDate] = useState(new Date('8 /25/2024').getTime());
   const [state, setState] = useState({
     days: 0,
@@ -50,15 +50,15 @@ const About = () => {
     }
   };
   return (
-    <section id='about' className='bg-black about-background position-relative ' >
+    <section id='about' className='bg-black about-background position-relative -mt-1' >
       <div className=" position-absolute ellipse2236">
         <Ellipse2236 />
       </div>
-      <Container className='pt-50 position-relative' data-aos="fade-up">
+      <Container className='pt-50 position-relative'>
         <div className=" position-absolute dino-1 ">
           <img src={Dino} alt="dino" />
         </div>
-        <div className="timeing-box  position-relative  mx-auto " data-aos="fade-up" >
+        <div className="timeing-box  position-relative  mx-auto " >
           <Row className=' flex-wrap-reverse'>
             <Col lg={5} className='z-1 pt-lg-0 pt-4'>
               <div className="">
@@ -164,4 +164,4 @@ const About = () => {
     </section>
   )
 }
-export default About
+export default AboutSection

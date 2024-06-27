@@ -6,9 +6,9 @@ import Bottomunion from '../assets/images/webp/Union-bottom.webp'
 import Questions1 from '../assets/images/webp/questions1.webp'
 import Questions2 from '../assets/images/webp/questions2.webp'
 import { Ellipse2230 } from '../common/icon';
-const Questions = () => {
+const QuestionsSection = () => {
     return (
-        <section className='bg-black position-relative' id='whitepaper'>
+        <section className='bg-black position-relative -mt-1' id='whitepaper'>
             <div className=" position-absolute ellipse2230 z-2">
                 <Ellipse2230/>
             </div>
@@ -23,7 +23,7 @@ const Questions = () => {
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0" data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>WHAT IS $CLAIR?</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>WHAT IS $CLAIR?</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -34,7 +34,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="1" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Arcu in pellentesque sit odio.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Arcu in pellentesque sit odio.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -45,7 +45,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="2" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Lorem gravida feugiat aliquet arcu porttitor sodales tellus habitant sed.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Lorem gravida feugiat aliquet arcu porttitor sodales tellus habitant sed.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -56,7 +56,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="3" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Metus augue dictumst sit amet.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Metus augue dictumst sit amet.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -67,7 +67,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="4" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Elementum viverra tellus tincidunt nunc odio at id ipsum.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Elementum viverra tellus tincidunt nunc odio at id ipsum.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -78,7 +78,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="5" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Sagittis morbi aliquam facilisis ornare lacus tempus massa.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Sagittis morbi aliquam facilisis ornare lacus tempus massa.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -89,7 +89,7 @@ const Questions = () => {
                         </Accordion.Item>
                         <Accordion.Item eventKey="6" className='mt-24' data-aos="fade-up">
                             <Accordion.Header >
-                                <h6 className=' font-manrope fs-16 lh-24 mb-0 gray-100'>Elementum at dui varius consequat fringilla.</h6>
+                                <h6 className=' font-manrope fs-16 lh-24 mb-0 white-light duration-300'>Elementum at dui varius consequat fringilla.</h6>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <h6 className="font-manrope  fw-normal fs-16 lh-24 mb-0 gray-100 max-w-510">
@@ -105,4 +105,4 @@ const Questions = () => {
         </section>
     )
 }
-export default Questions
+export default QuestionsSection

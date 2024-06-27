@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Nav} from 'react-bootstrap'
 import { Ellipse2231 } from '../common/icon'
-const Footer = () => {
+const FooterSection = () => {
     return (
-        <footer className='bg-bla ck footer-background  position-relative overflow-hidden'>
+        <footer className='bg-bla ck footer-background  position-relative overflow-hidden -mt-1'>
              <div className=" position-absolute ellipse2231">
                 <Ellipse2231/>
             </div>
@@ -29,4 +29,4 @@ const Footer = () => {
         </footer>
     )
 }
-export default Footer
+export default FooterSection

@@ -7,7 +7,7 @@ import Icon2 from '../assets/images/svg/icon2.svg'
 import Plus from '../assets/images/svg/Puls.svg'
 import { Ellipse2238 } from '../common/icon'
 
-const Tokenomics = () => {
+const TokenomicsSection = () => {
     return (
         <section className='bg-black bg-tokenomics position-relative' id='tokenomics'>
             <div className=" position-absolute ellipse2238 z-2">
@@ -94,4 +94,4 @@ const Tokenomics = () => {
     )
 }
 
-export default Tokenomics
+export default TokenomicsSection

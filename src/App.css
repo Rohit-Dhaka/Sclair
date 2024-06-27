@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+* {
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
 .font-manrope {
   font-family: "Manrope", sans-serif;
 }
 
 /* ------------------------------------------------navbar */
 
-.navbar-nav {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
+
 
 .Navbar {
   border-top: 1px solid #F1F1F129;
   border-bottom: 1px solid #F1F1F129;
   background-color: #F1F1F105 !important;
-  backdrop-filter: blur(12px);
+  /* backdrop-filter: blur(12px); */
+  height: 100px;
 }
 
 .nav-link {
@@ -85,8 +87,8 @@
   padding-top: 64px;
 }
 
-.pt-150 {
-  padding-top: 150px;
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pb-12 {
@@ -201,11 +203,23 @@
   gap: 20px;
 }
 
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
 /* ------------------------------------------------gap */
 /* ------------------------------------------------margin */
+.-mt-1{
+  margin-top: -1px;
+}
 .mt-24 {
   margin-top: 24px;
 }
+
 /* ------------------------------------------------margin */
 /* ------------------------------------------------btn */
 .buy-btn {
@@ -260,9 +274,10 @@
   display: flex !important;
   align-items: center !important;
 }
-.hero-btn:hover img{
-  transform: rotateX(360deg);  
-  transition: 0.9s;  
+
+.hero-btn:hover img {
+  transform: rotateX(360deg);
+  transition: 0.9s;
 }
 
 /* ------------------------------------------------btn */
@@ -350,7 +365,7 @@
 
 .ellipse2230 {
   right: 0;
-  bottom: -10%;  
+  bottom: -10%;
 }
 
 .ellipse2231 {
@@ -460,6 +475,7 @@
 .tokenomics-img {
   max-width: 491px !important;
   max-height: 565px;
+  /* width: 100%; */
 }
 
 .line-yellow {
@@ -488,9 +504,10 @@
 
 .media-icon:hover {
   background-color: yellow !important;
-  border: 0.5px solid yellow !important;  
+  border: 0.5px solid yellow !important;
 }
-.media-icon:hover svg{
+
+.media-icon:hover svg {
   transform: rotateY(360deg);
   transition: 0.9s;
 }
@@ -569,6 +586,7 @@
 .outline-none {
   outline: none;
 }
+
 .bg-layer {
   max-width: 530px;
   height: 460px;
@@ -690,15 +708,11 @@
   margin: 10px;
 }
 
-.trading-img {
-  bottom: 0;
-  left: -4%;
-  right: -4%;
-}
+
 
 .hero-img {
   max-width: 810px;
-  min-height: 442px;
+  max-height: 442px;
 }
 
 .navbar-toggler {
@@ -743,6 +757,88 @@
 .icon {
   max-width: 132px;
   max-height: 132px;
+}
+.collapsed h6{
+  color:  var(--gray-100) !important ;
+}
+.duration-300{
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+  .menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #0C1115; */
+    background-color: #090E12;
+    /* background-color: #F1F1F105 !important; */
+    /* backdrop-filter: blur(12px) !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    top: 0;
+    z-index: 3 !important;
+    left: -100%;
+    gap: 20px;
+  }
+
+  .menuicon {
+    z-index: 4 !important;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    transition: 0.6s;
+  }
+
+  .navshow {
+    left: 0;
+  }
+
+  .cross .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .cross .bar:nth-child(2) {
+    transform: translate(-30px);
+    opacity: 0;
+  }
+
+  .cross .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .navhide {
+    overflow: hidden !important;
+  }
+  .trading-img {
+    top: 30%;
+    /* bottom: 0; */
+    left: -4%;
+    right: -4%;
+    opacity: 40%;
+  }
+
+
 }
 
 @media (max-width:575px) {
@@ -846,7 +942,7 @@
     padding-top: 100px !important;
   }
 
-  .pt_lg_78 {
+  .pt-lg-78 {
     margin-top: 78px !important;
   }
 
@@ -869,12 +965,47 @@
   .gap-lg-28 {
     gap: 28px !important;
   }
+
+  .Navbar {
+    /* border-top: 1px solid #F1F1F129; */
+    /* border-bottom: 1px solid #F1F1F129; */
+    /* background-color: #F1F1F105 !important; */
+    backdrop-filter: blur(12px);
+  }
+  .trading-img {
+    bottom: 0;
+    left: -4%;
+    right: -4%;
+  }
 }
 
 @media (min-width:1200px) {
   .trading-img {
-    bottom: -6%;
+    bottom: -6% !important;
     left: -9%;
     right: -9%;
   }
+}
+
+@media (min-width:1400px) {
+  .trading-img{
+    bottom: -17% !important;
+  }
+  
+}
+
+@media (min-width:1525px) {
+  .trading-img{
+    bottom: -20% !important;
+  }
+  .questions1 {
+    right: 10%;
+    top: 24%;
+  }
+  .questions2 {
+    left: 15%;
+    top: 40%;
+  }
+
+  
 }

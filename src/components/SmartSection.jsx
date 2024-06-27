@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import Topunion from '../assets/images/webp/Union-top.webp'
 import Bottomunion from '../assets/images/webp/Union-bottom.webp'
 import { Ellipse2235 } from '../common/icon'
-const Smart = () => {
+const SmartSection = () => {
     const [inputValue, setInputValue] = useState('0xFD1929755F73f974648daD00ab491a7C44a00eeD');
 
     const handleInputChange = (event) => {
@@ -15,7 +15,7 @@ const Smart = () => {
         alert("Text  Copy")
     };
     return (
-        <section className='smart-background position-relative'>
+        <section className='smart-background position-relative -mt-1'>
             <div className=" position-absolute ellipse2235 z-2">
                 <Ellipse2235 />
             </div>
@@ -39,4 +39,4 @@ const Smart = () => {
         </section>
     )
 }
-export default Smart
+export default SmartSection

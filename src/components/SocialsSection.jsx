@@ -3,9 +3,9 @@ import { Container, Nav } from 'react-bootstrap'
 import Topunion from '../assets/images/webp/Union-top.webp'
 import Dino from '../assets/images/webp/dino.webp'
 import { Ellipse1, Ellipse2, Ellipse2232 } from '../common/icon'
-const Socials = () => {
+const SocialsSection = () => {
     return (
-        <section className='bg-black social-section position-relative'>        
+        <section className='bg-black social-section position-relative -mt-1'>        
             <div className=" position-absolute dino-2">
                 <img src={Dino} alt="dino" />
             </div>
@@ -52,4 +52,4 @@ const Socials = () => {
         </section>
     )
 }
-export default Socials
+export default SocialsSection
