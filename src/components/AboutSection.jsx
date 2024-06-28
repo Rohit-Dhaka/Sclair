@@ -9,7 +9,6 @@ import Clock from '../assets/images/svg/clock.svg'
 import Dotted from '../assets/images/svg/dotted.svg'
 import Commonbtn from './Commonbtn'
 import Dino from '../assets/images/webp/dino.webp'
-import Baricon from '../assets/images/webp/Bar-icon.webp'
 import Yellowline from '../assets/images/webp/yellow-line.webp'
 import Whiteline from '../assets/images/webp/white-line.webp'
 import { Ellipse2236 } from '../common/icon'
@@ -50,7 +49,8 @@ const AboutSection = () => {
     }
   };
   return (
-    <section id='about' className='bg-black about-background position-relative -mt-1' >
+    <section id='about' className='bg-black about-background position-relative common-margin' >
+
       <div className=" position-absolute ellipse2236">
         <Ellipse2236 />
       </div>
@@ -97,49 +97,52 @@ const AboutSection = () => {
               <div className="">
                 <div className="d-flex  justify-content-between">
                   <div className="d-flex flex-column">
-                    <h6 className=' font-manrope fw-normal fs-16  lh-24 white-smoke mb-0'>Tokens are Sold</h6>
+                    <h6 className=' font-manrope fw-normal fs-16  lh-24 white-silver mb-0'>Tokens are Sold</h6>
                     <h5 className=' font-manrope fw-bold fs-16 lh-24 color-yellow mb-0'>98,212,738</h5>
                   </div>
                   <div className="d-flex flex-column pr-24">
-                    <h6 className=' font-manrope fw-normal fs-16  lh-24 white-smoke mb-0'>Tokens Remaining</h6>
-                    <h5 className=' font-manrope fw-bold fs-16 lh-24  white-light mb-0'>80,212,738</h5>
+                    <h6 className=' font-manrope fw-normal fs-16  lh-24 white-silver mb-0'>Tokens Remaining</h6>
+                    <h5 className=' font-manrope fw-bold fs-16 lh-24  white-smoke mb-0'>80,212,738</h5>
                   </div>
                 </div>
                 <div className="pt-sm-3 pt-1  position-relative">
                   <div className=" position-absolute line-yellow">
                     <img src={Yellowline} alt="yellowline" />
+
                   </div>
                   <div className=" position-absolute line-white">
                     <img src={Whiteline} alt="whiteline" />
+                  </div>                  
+                  <div class="range">
+                    <input type="range" class="range-input" />
                   </div>
-                  <img src={Baricon} alt="baricon" className='w-100' />
                 </div>
                 <h6 className='mb-0  font-manrope fw-normal fs-14 lh-21  gray-100 pt-6'>Purchase $Clair fast until the price increase.</h6>
                 <div className="d-flex align-items-center justify-content-between pt-17 flex-wrap">
                   <div className="d-flex gap-10">
                     <img src={Clock} alt="clock" />
-                    <h6 className=' font-manrope fw-normal fs-16 lh-20 white-light mb-0 w-sm-80'>Price
+                    <h6 className=' font-manrope fw-normal fs-16 lh-20 white-smoke mb-0 w-sm-80'>Price
                       increase in</h6>
                   </div>
                   <div className="d-flex gap-2 align-items-end  pt-sm-0 pt-2">
                     <div className="d-flex flex-column align-items-center">
                       <h6 className=' font-manrope fw-normal fs-14 lh-21 mb-0 gray-100'>Days</h6>
-                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-light">{state.days || '0'}</div>
+                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-smoke">{state.days || '0'}</div>
                     </div>
                     <img src={Dotted} alt="dotted" className='pb-12' />
                     <div className="d-flex flex-column align-items-center">
                       <h6 className=' font-manrope fw-normal fs-14 lh-21 mb-0 gray-100'>Hours</h6>
-                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-light">{state.hours || '00'}</div>
+                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-smoke">{state.hours || '00'}</div>
                     </div>
                     <img src={Dotted} alt="dotted" className='pb-12' />
                     <div className="d-flex flex-column align-items-center">
                       <h6 className=' font-manrope fw-normal fs-14 lh-21 mb-0 gray-100'>Mins</h6>
-                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-light">{state.minutes || '00'}</div>
+                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-smoke">{state.minutes || '00'}</div>
                     </div>
                     <img src={Dotted} alt="dotted" className='pb-12' />
                     <div className="d-flex flex-column align-items-center">
                       <h6 className=' font-manrope fw-normal fs-14 lh-21 mb-0 gray-100'>Secs</h6>
-                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-light">{state.seconds || '00'}</div>
+                      <div className="timing-box d-flex justify-content-center  align-items-center font-manrope fw-normal fs-24 lh-36  white-smoke">{state.seconds || '00'}</div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +150,7 @@ const AboutSection = () => {
             </Col>
           </Row>
         </div>
-        <h2 className='font-manrope fw-bold fs-48 lh-57 text-center mb-0 white-light pt-lg-100 pt-sm-80 pt-60'>About <span className="color-yellow">$CLAIR</span></h2>
+        <h2 className='font-manrope fw-bold fs-48 lh-57 text-center mb-0 white-smoke pt-lg-100 pt-sm-80 pt-60'>About <span className="color-yellow">$CLAIR</span></h2>
         <div className="d-flex flex-column  align-items-center pb-62">
           <h6 className='text-center font-manrope fw-normal fs-16 lh-24 mb-0 pt-3 max-w-776 gray-100'>As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</h6>
           <h6 className='text-center font-manrope fw-normal fs-16 lh-24 mb-0 pt-12 max-w-776 gray-100'>

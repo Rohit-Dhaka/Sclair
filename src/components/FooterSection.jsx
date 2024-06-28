@@ -3,7 +3,7 @@ import { Container, Nav} from 'react-bootstrap'
 import { Ellipse2231 } from '../common/icon'
 const FooterSection = () => {
     return (
-        <footer className='bg-bla ck footer-background  position-relative overflow-hidden -mt-1'>
+        <footer className='bg-bla ck footer-background  position-relative overflow-hidden common-margin'>
              <div className=" position-absolute ellipse2231">
                 <Ellipse2231/>
             </div>
@@ -14,14 +14,14 @@ const FooterSection = () => {
                         and Baby Sinclair is wielding it with style. The bad players better watch out;
                         the crypto defender is here, armed with memes and ready to act.</h6>
                     <div className="d-flex   footer-link  pt-50 pb-40  flex-wrap justify-content-center     ">
-                        <Nav.Link href='#about' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>About</Nav.Link>
-                        <Nav.Link href='#tokenomics' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Tokenomics</Nav.Link>
-                        <Nav.Link href='#audit' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Audit</Nav.Link>
-                        <Nav.Link href='#roadmap' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Roadmap</Nav.Link>
-                        <Nav.Link href='#whitepaper' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>White Paper</Nav.Link>
-                        <Nav.Link href='#privacy' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Privacy   </Nav.Link>
-                        <Nav.Link href='#' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Cookies</Nav.Link>
-                        <Nav.Link href='#' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative'>Disclaimer</Nav.Link>
+                        <Nav.Link href='#about' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>About</Nav.Link>
+                        <Nav.Link href='#tokenomics' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Tokenomics</Nav.Link>
+                        <Nav.Link href='#audit' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Audit</Nav.Link>
+                        <Nav.Link href='#roadmap' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Roadmap</Nav.Link>
+                        <Nav.Link href='#whitepaper' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>White Paper</Nav.Link>
+                        <Nav.Link href='#privacy' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Privacy   </Nav.Link>
+                        <Nav.Link href='#' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Cookies</Nav.Link>
+                        <Nav.Link href='#' className=' font-manrope fw-medium fs-16 lh-24 gray-200 underline position-relative '>Disclaimer</Nav.Link>
                     </div>
                     <div className="yellow-line w-100 "></div>
                 </div>

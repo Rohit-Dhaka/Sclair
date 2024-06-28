@@ -15,16 +15,21 @@
     --lh-36: 36px;
     --lh-48: 48px;
     --lh-57: 50px;
-    --lh-72: 72px;
+    --lh-72: 60px;
 
     --yellow:#FFF624;
-    --white-smoke:#C1C1C1;
-    --white-light:#F1F1F1;
+    --white-silver:#C1C1C1;
+
+
+    --white-smoke:#F1F1F1;
     --gray-100:#A9A9A9;
     --gray-200:#D9D9D9;
+    --gray-300:#FFFFFF14;
+    --gray-400:#F1F1F129;
     --white:#FFF;
     --black:#000;
     --darkSlate-Gray:#FFF62400;
+    --naro-color: #191919;
 
 }
 .color-white{
@@ -36,11 +41,11 @@
 .gray-100{
     color: var(--gray-100);
 }
-.white-light{
-    color: var(--white-light) !important;
-}
 .white-smoke{
     color: var(--white-smoke) !important;
+}
+.white-silver{
+    color: var(--white-silver) !important;
 }
 .color-yellow{
     color: var(--yellow);

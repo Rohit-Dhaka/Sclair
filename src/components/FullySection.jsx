@@ -15,20 +15,23 @@ import Topunion from '../assets/images/webp/Union-top.webp'
 import Bottomunion from '../assets/images/webp/Union-bottom.webp'
 import Backgroundlayer from '../assets/images/webp/bg-layer.webp'
 const FullySection = () => {
-    var settings = {            
-        variableWidth: true,                
-        arrows: false,        
-        slidesToShow: 1,        
+    var settings = {
+        variableWidth: true,
+        arrows: false,
+        slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 0,
         speed: 8000,
         pauseOnHover: false,
-        cssEase: 'linear'            
+        cssEase: 'linear'
     };
     return (
-        <section className='bg-black  overflow-hidden  position-relative -mt-1' id='audit' >
+        <section className='bg-black  overflow-hidden  position-relative common-margin' id='audit' >
             <div className="bg-light-yellow-layer w-100  position-absolute  z-0"></div>
-            <img src={Bottomunion} alt="Bottomunion" className='w-100 z-1 position-relative' />
+            <div className="w-100 common-img-margin">
+
+                <img src={Bottomunion} alt="Bottomunion" className='w-100 z-1 position-relative  ' />
+            </div>
             <Container>
                 <Row className='pt-sm-77 pt-60 pb-sm-83 pb-60'>
                     <Col lg={6} className='d-flex justify-content-center z-1 position-relative' data-aos="fade-up">
@@ -39,9 +42,9 @@ const FullySection = () => {
                     </Col>
                     <Col lg={6} className='z-1 pt-lg-0 pt-4' data-aos="fade-up">
                         <div className="d-flex flex-column align-items-start">
-                            <h6 className=' font-manrope fw-normal fs-20 lh-48 mb-0 white-light'>Rest easy knowing that $CLAIR is </h6>
+                            <h6 className=' font-manrope fw-normal fs-20 lh-48 mb-0 white-smoke'>Rest easy knowing that $CLAIR is </h6>
                             <h5 className='font-manrope fw-bold fs-32 lh-48 color-yellow mb-0 py-10'>Fully Audited and 100% Secure.</h5>
-                            <h6 className=' font-manrope fw-normal fs-20 lh-48 mb-0 white-smoke pb-32'>Zero Room for Rug Pulls: Invest with Confidence.</h6>
+                            <h6 className=' font-manrope fw-normal fs-20 lh-48 mb-0 white-silver pb-32'>Zero Room for Rug Pulls: Invest with Confidence.</h6>
                             <Commonbtn name="Audit" />
                         </div>
                     </Col>
@@ -49,8 +52,8 @@ const FullySection = () => {
                 <Row className='pt-49 pb-sm-77 pb-60  top-border flex-wrap-reverse z-1 position-relative'>
                     <Col lg={7} className='z-1 pt-lg-0 pt-4 d-flex  justify-content-center' data-aos="fade-up">
                         <div className="d-flex flex-column">
-                            <h4 className=' font-manrope fw-bold fs-32 lh-48 white-light mb-0 '>Listing on <span className="color-yellow">Major Exchanges</span></h4>
-                            <h6 className=' font-manrope fw-normal fs-20 lh-30 white-light pt-3 mb-0 max-w-475'>Baby Sinclair’s Team is in action to secure the <span className="color-yellow">$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</h6>
+                            <h4 className=' font-manrope fw-bold fs-32 lh-48 white-smoke mb-0 '>Listing on <span className="color-yellow">Major Exchanges</span></h4>
+                            <h6 className=' font-manrope fw-normal fs-20 lh-30 white-smoke pt-3 mb-0 max-w-475'>Baby Sinclair’s Team is in action to secure the <span className="color-yellow">$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</h6>
                         </div>
                     </Col>
                     <Col lg={5} className='z-1 d-flex justify-content-lg-end justify-content-center ' data-aos="fade-up">
