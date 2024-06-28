@@ -9,7 +9,7 @@ import { Ellipse2238 } from '../common/icon'
 
 const TokenomicsSection = () => {
     return (
-        <section className='bg-black bg-tokenomics position-relative' id='tokenomics'>
+        <section className='bg-black bg-tokenomics position-relative common-margin' id='tokenomics'>
             <div className=" position-absolute ellipse2238 z-2">
                 <Ellipse2238 />
             </div>

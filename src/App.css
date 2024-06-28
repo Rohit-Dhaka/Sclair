@@ -208,7 +208,7 @@
 }
 
 .common-margin {
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .mt-24 {
@@ -587,6 +587,9 @@
   top: -39%;
   left: 7%;
 }
+.bg-layer2{
+  top: -20%;
+}
 
 .timing-box {
   width: 50px;
@@ -875,6 +878,11 @@ input[type="range"]::-webkit-slider-thumb {
     height: 460px;
     top: -14%;
     left: -8%;
+  }
+  .next-section{
+    right: 0;
+    bottom: 20%;
+
   }
 
 }

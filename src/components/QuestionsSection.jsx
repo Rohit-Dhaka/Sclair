@@ -9,7 +9,7 @@ import { Ellipse2230 } from '../common/icon';
 const QuestionsSection = () => {
     return (
         <section className='bg-black position-relative common-margin' id='whitepaper'>
-            <div className=" position-absolute ellipse2230 z-2">
+            <div className=" position-absolute ellipse2230 z-2 d-sm-block d-none">
                 <Ellipse2230/>
             </div>
             <div className="bg-light-yellow-layer w-100  position-absolute  z-0"></div>

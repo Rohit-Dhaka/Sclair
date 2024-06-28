@@ -49,7 +49,7 @@ const AboutSection = () => {
     }
   };
   return (
-    <section id='about' className='bg-black about-background position-relative common-margin' >
+    <section id='about' className='bg-black about-background position-relative common-margin common-margin' >
 
       <div className=" position-absolute ellipse2236">
         <Ellipse2236 />
@@ -106,11 +106,11 @@ const AboutSection = () => {
                   </div>
                 </div>
                 <div className="pt-sm-3 pt-1  position-relative">
-                  <div className=" position-absolute line-yellow">
+                  <div className=" position-absolute line-yellow d-sm-block d-none">
                     <img src={Yellowline} alt="yellowline" />
 
                   </div>
-                  <div className=" position-absolute line-white">
+                  <div className=" position-absolute line-white  d-sm-block d-none">
                     <img src={Whiteline} alt="whiteline" />
                   </div>                  
                   <div class="range">

@@ -56,7 +56,11 @@ const FullySection = () => {
                             <h6 className=' font-manrope fw-normal fs-20 lh-30 white-smoke pt-3 mb-0 max-w-475'>Baby Sinclair’s Team is in action to secure the <span className="color-yellow">$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</h6>
                         </div>
                     </Col>
-                    <Col lg={5} className='z-1 d-flex justify-content-lg-end justify-content-center ' data-aos="fade-up">
+                    <Col lg={5} className='z-1 d-flex justify-content-lg-end justify-content-center  position-relative' data-aos="fade-up">
+                    <div className=" position-absolute bg-layer2 d-lg-block d-none">
+                            <img src={Backgroundlayer} alt="" className='w-100' />
+                        </div>
+
                         <div className="major-box position-relative w-100 ">
                             <Slider {...settings} className='pb-25 '>
                                 <div>
