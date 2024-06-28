@@ -270,7 +270,7 @@
 }
 
 .hero-btn:hover img {
-  transform: rotateX(360deg);
+  transform: rotateY(360deg);
   transition: 0.9s;
 }
 

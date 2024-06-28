@@ -113,7 +113,7 @@ const AboutSection = () => {
                   <div className=" position-absolute line-white  d-sm-block d-none">
                     <img src={Whiteline} alt="whiteline" />
                   </div>                  
-                  <div class="range">
+                  <div class="range position-relative z-1">
                     <input type="range" class="range-input" />
                   </div>
                 </div>
