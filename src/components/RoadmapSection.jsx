@@ -17,7 +17,7 @@ const RoadmapSection = () => {
             <div className=" position-absolute ellipse2232">
                 <Ellipse2232 />
             </div>
-            <Container className=' position-relat ive'>
+            <Container className=' position-relative'>
                 <h2 className=' font-manrope fw-bold fs-48 lh-57 white-smoke mb-0 text-center pt-64 pb-100 '>Roadmap</h2>
                 <Row className='pb-lg-366 pb-sm-80 pb-60' data-aos="fade-up">
                     <Col lg={4} sm={6} className='d-flex justify-content-center pt-lg-184 z-1'>
